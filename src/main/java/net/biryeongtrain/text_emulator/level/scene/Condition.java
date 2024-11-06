@@ -1,23 +1,23 @@
-package net.biryeongtrain.text_emulator.level;
+package net.biryeongtrain.text_emulator.level.scene;
 
-public class SelectCondition {
+public class Condition {
     String condition;
     String operator;
     int value;
     String unit;
 
-    public SelectCondition(String condition, String operator, int value, String unit) {
+    public Condition(String condition, String operator, int value, String unit) {
         this.condition = condition;
         this.operator = operator;
         this.value = value;
         this.unit = unit;
     }
 
-    public SelectCondition(String condition, String operator, String unit){
+    public Condition(String condition, String operator, String unit){
         this(condition, operator, 1, unit);
     }
 
-    public SelectCondition(String condition){
+    public Condition(String condition){
         this(condition, "", 0, "");
     }
 
